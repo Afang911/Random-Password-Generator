@@ -1,6 +1,5 @@
 var characterLength = 8;
 
-
 var specialCharArr = ["`", "!", "@", "$", "#", "%", "^", "&", "*", "?", "<", ">", "-", "=", "+"] ; 
 var lowerCaseArr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
 "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -26,7 +25,7 @@ function writePassword() {
   }
  
 else {
-  passwordTest.value="";
+  passwordText.value="";
 }
 }
 
@@ -39,7 +38,7 @@ function generatePassword(){
   return password ;
 }
 function getPrompts(){ 
-   var choiceArr = [] ;
+   var choiceArr = [];
   characterLength = parseInt(prompt("How many characters would you like your password to be? (8-128)"));
 
   if(isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
@@ -60,5 +59,5 @@ function getPrompts(){
   }
   return true; 
 }
-  
+
 
