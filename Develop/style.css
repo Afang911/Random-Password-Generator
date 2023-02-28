@@ -71,7 +71,9 @@ header {
   display: block;
   clear: both;
 }
-
+button:hover{
+  box-shadow: 5px 5px 5px red;
+}
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -86,6 +88,14 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+
+}
+
+button:focus{
+  background: green
+}
+button:active{
+  background: green;
 }
 
 button[disabled] {
@@ -116,6 +126,11 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+}
+
+.card-body:hover {
+  box-shadow: 5px 5px 5px blue;
+
 }
 
 @media (max-width: 690px) {
