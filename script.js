@@ -1,5 +1,5 @@
 var characterLength = 8;
-
+var choiceArr =[]; 
 var specialCharArr = ["`", "!", "@", "$", "#", "%", "^", "&", "*", "?", "<", ">", "-", "=", "+"] ; 
 var lowerCaseArr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
 "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -33,9 +33,9 @@ function generatePassword(){
   var newPassword = "";
   for(var i=0; i < characterLength; i++){
     var randomIndex = Math.floor(Math.random() * choiceArr.length);
-    password = password + choiceArr[randomIndex];
+    newPassword = newPassword + choiceArr[randomIndex];
   }
-  return password ;
+  return newPassword ;
 }
 function getPrompts(){ 
    var choiceArr = [];
